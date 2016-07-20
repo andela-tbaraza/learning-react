@@ -4,8 +4,8 @@ import React from 'react';
 // create a component called App
 class App extends React.Component {
   // render method returns how we want our html template to look like
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       word: 'WORLD',
       data:
