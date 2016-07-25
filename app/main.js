@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App.jsx';
-// import Data from './Props.jsx';
+import {Router, Route, browserHistory, IndexRoute} from 'react-router';
+import App from './components/App.jsx';
+import Data from './components/Props.jsx';
 // import Comp from './compAPI.jsx';
-import Cycle from './Cycle.jsx';
+import Cycle from './components/Cycle.jsx';
 
-ReactDOM.render(<Cycle/>, document.getElementById('root'));
-setTimeout(() => {
-   ReactDOM.unmountComponentAtNode(document.getElementById('root'));}, 10000)
+
+ReactDOM.render((
+  <Router history = {browserHistory}>
+    <Route path = "/" component = {App}/>
+    <Route path = "Data" component = {Data} />
+    <Route path = "Cycle" component = {Cycle} />
+
+  </Router>), document.getElementById('root'));
+// setTimeout(() => {
+//    ReactDOM.unmountComponentAtNode(document.getElementById('root'));}, 10000)

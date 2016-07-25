@@ -14,6 +14,7 @@ class Data extends React.Component{
         <h2>String: {this.props.propString}</h2>
         <h2>Func: {this.props.propFunc(2, 4)}</h2>
         <h2>Object: {this.props.propObject.name}</h2>
+        {this.props.children}
       </div>
     );
   }
@@ -33,14 +34,14 @@ Data.defaultProps = {
   }
 };
 
-Data.propTypes = {
-  propArray: React.propTypes.array.isRequired,
-  propBool: React.PropTypes.bool.isRequired,
-  propNumber: React.propTypes.number,
-  propString: React.propTypes.string,
-  propFunc: React.propTypes.func,
-  propObject: React.propTypes.object
-};
+// Data.propTypes = {
+//   propArray: React.propTypes.array.isRequired,
+//   propBool: React.PropTypes.bool.isRequired,
+//   propNumber: React.propTypes.number,
+//   propString: React.propTypes.string,
+//   propFunc: React.propTypes.func,
+//   propObject: React.propTypes.object
+// };
 // then render normally
 export default Data;
 // render like this in your main.js file
