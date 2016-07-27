@@ -34,7 +34,7 @@ Data.defaultProps = {
   }
 };
 
-// Data.propTypes = {
+// propTypes = {
 //   propArray: React.propTypes.array.isRequired,
 //   propBool: React.PropTypes.bool.isRequired,
 //   propNumber: React.propTypes.number,
