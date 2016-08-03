@@ -1,0 +1,5 @@
+site_name: Panda
+pages:
+- Home: index.md
+- About Us: about.md
+theme: readthedocs
